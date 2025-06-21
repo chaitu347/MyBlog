@@ -6,68 +6,14 @@ const App= () => {
   const [selectedBlog, setSelectedBlog] = useState(null);
 
   const blogPosts = [
+   
     {
       id: 1,
-      title: "Understanding React Hooks: A Complete Guide",
-      excerpt: "Dive deep into React Hooks and learn how they revolutionize state management and side effects in functional components.",
-      author: "Chaitanya",
-      date: "2025-06-21",
-      readTime: "8 min read",
-      category: "Technology",
-      image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=400&fit=crop",
-      content: `
-        <h2 class="text-2xl font-bold mb-4">What are React Hooks?</h2>
-        <p class="mb-4">React Hooks are functions that let you "hook into" React state and lifecycle features from function components. They were introduced in React 16.8 and have completely changed how we write React applications.</p>
-        
-        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=300&fit=crop" alt="Code on screen" class="w-full h-64 object-cover rounded-lg mb-6" />
-        
-        <h3 class="text-xl font-semibold mb-3">Why Use Hooks?</h3>
-        <p class="mb-4">Before Hooks, you had to convert function components to class components to use state or lifecycle methods. This often led to:</p>
-        <ul class="list-disc list-inside mb-4 space-y-2">
-          <li>Complex component hierarchies</li>
-          <li>Wrapper hell with higher-order components</li>
-          <li>Hard to reuse stateful logic</li>
-        </ul>
-        
-        <h3 class="text-xl font-semibold mb-3">Common Hooks</h3>
-        <p class="mb-4"><strong>useState:</strong> Manages local state in functional components</p>
-        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mb-4">
-          <code class="text-sm">
-            const [count, setCount] = useState(0);
-          </code>
-        </div>
-        
-        <p class="mb-4"><strong>useEffect:</strong> Handles side effects like API calls, subscriptions, or DOM manipulation</p>
-        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mb-4">
-          <code class="text-sm">
-            useEffect(() => {<br/>
-            &nbsp;&nbsp;// Side effect logic<br/>
-            }, [dependencies]);
-          </code>
-        </div>
-        
-        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=300&fit=crop" alt="React development" class="w-full h-64 object-cover rounded-lg mb-6" />
-        
-        <h3 class="text-xl font-semibold mb-3">Best Practices</h3>
-        <p class="mb-4">When using React Hooks, keep these best practices in mind:</p>
-        <ul class="list-disc list-inside mb-4 space-y-2">
-          <li>Always call Hooks at the top level of your React function</li>
-          <li>Don't call Hooks inside loops, conditions, or nested functions</li>
-          <li>Use the ESLint plugin for Hooks to catch common mistakes</li>
-          <li>Custom Hooks should start with "use" prefix</li>
-        </ul>
-        
-        <p class="mb-4">React Hooks have made functional components much more powerful and are now the recommended way to write React components. They provide a more direct API to the React concepts you already know.</p>
-      `
-    },
-    
-    {
-      id: 2,
       title: "Moonlight on Broken Waters",
       excerpt: "A deeply moving tale of Steve Harrington's journey through childhood trauma, adolescent struggles, and the search for love and acceptance in the quiet town of Hawkins.",
-      author: "Sarah Johnson",
-      date: "2024-06-10",
-      readTime: "8 min read",
+      author: "Chaitanya",
+      date: "2025-06-21",
+      readTime: "15 min read",
       category: "Stories",
       image: "https://media.vanityfair.com/photos/5d1cbc641c225a00086f40d3/4:3/w_1332,h_999,c_limit/steve-harrington-stranger-things.jpg",
       content: `
